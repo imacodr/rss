@@ -12,40 +12,72 @@ local applyGridLayout = require(script.Parent.Interpretations.applyGridLayout)
 local applyPageLayout = require(script.Parent.Interpretations.applyPageLayout)
 local applyTableLayout = require(script.Parent.Interpretations.applyTableLayout)
 
-return function (element: GuiObject, stylesheet: Types.Stylesheet)
-    if stylesheet.corner then
-        applyCorner(element, stylesheet)
-    end
+--[=[
+    @function style
+    @within MainModule
 
-    if stylesheet.padding then
-        applyPadding(element, stylesheet)
-    end
+    @param stylesheets Types.Stylesheet
+    @param styles string | Types.Stylesheet
+    @param element GuiObject?
+    
+    @return {Instance}
+]=]
 
-    if stylesheet.scale then
-        applyScale(element, stylesheet)
-    end
 
-    if stylesheet.aspectRatio then
-        applyAspectRatio(element, stylesheet)
-    end
+local instanceDictionary = {}
 
-    if stylesheet.textSize then
-        applyTextSize(element, stylesheet)
-    end
+return function (stylesheets: Types.Stylesheet)
+    return function (styles: string | Types.Stylesheet, element: GuiObject?)
+        local stylesheet = styles
+        if type(styles) == "string" then
+            stylesheet = stylesheets[styles] or {}
+        end
 
-    if stylesheet.listLayout then
-        applyListLayout(element, stylesheet)
-    end
-
-    if stylesheet.pageLayout then
-        applyPageLayout(element, stylesheet)
-    end
-
-    if stylesheet.gridLayout then
-        applyGridLayout(element, stylesheet)
-    end
-
-    if stylesheet.tableLayout then
-        applyTableLayout(element, stylesheet)
+        if stylesheet.corner then
+            local instance = applyCorner(stylesheet, element)
+            table.insert(instanceDictionary, instance)
+        end
+        
+        if stylesheet.padding then
+            local instance = applyPadding(stylesheet, element)
+            table.insert(instanceDictionary, instance)
+        end
+        
+        if stylesheet.scale then
+            local instance = applyScale(stylesheet, element)
+            table.insert(instanceDictionary, instance)
+        end
+        
+        if stylesheet.aspectRatio then
+            local instance = applyAspectRatio(stylesheet, element)
+            table.insert(instanceDictionary, instance)
+        end
+            
+        if stylesheet.textSize then
+            local instance = applyTextSize(stylesheet, element)
+            table.insert(instanceDictionary, instance)
+        end
+        
+        if stylesheet.listLayout then
+            local instance = applyListLayout(stylesheet, element)
+            table.insert(instanceDictionary, instance)
+        end
+        
+        if stylesheet.pageLayout then
+            local instance = applyPageLayout(stylesheet, element)
+            table.insert(instanceDictionary, instance)
+        end
+        
+        if stylesheet.gridLayout then
+            local instance = applyGridLayout(stylesheet, element)
+            table.insert(instanceDictionary, instance)
+        end
+        
+        if stylesheet.tableLayout then
+            local instance = applyTableLayout(stylesheet, element)
+            table.insert(instanceDictionary, instance)
+        end
+    
+        return instanceDictionary
     end
 end

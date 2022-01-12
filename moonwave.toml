@@ -1,0 +1,19 @@
+classOrder = [    
+    "MainModule",    
+    "Interpretations"
+]
+gitSourceBranch = "main"
+
+[docusaurus]
+tagline = "Advanced element styling made easier"
+favicon = "https://raw.githubusercontent.com/imacodr/rss/main/assets/logo.png"
+themeConfig = {navbar = {logo = {alt = "Rojo Logo",src = "img/logo.png",}}}
+
+
+[[navbar.items]]
+href = "https://discord.gg/SYtrv9m"
+label = "Discord"
+position = "right"
+
+[home]
+enabled = true

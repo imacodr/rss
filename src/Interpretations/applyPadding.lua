@@ -1,3 +1,12 @@
+--[=[
+    @function applyPadding
+    @within Interpretations
+
+    @param stylesheet Types.Stylesheet
+    @param element GuiObject?
+    @return Instance
+]=]
+
 local Types = require(script.Parent.Parent.Utility.typings)
 
 local logExpectedError = require(script.Parent.Parent.Loggers.logExpectedError)
@@ -5,7 +14,7 @@ local logExpectedError = require(script.Parent.Parent.Loggers.logExpectedError)
 local Fusion = require(script.Parent.Parent.modules.Fusion)
 local New = Fusion.New
 
-return function (element: GuiObject, stylesheet: Types.Stylesheet)
+return function (stylesheet: Types.Stylesheet, element: GuiObject?)
     local paddingProps = stylesheet.padding
     
     local instance

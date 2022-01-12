@@ -3,6 +3,10 @@
   "tree": {
     "$className": "DataModel",
     "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "RSSTest": {
+        "$path": "testing"
+      },
       "rss": {
         "$path": "src",
         "modules": { "$path": "roarn_modules" }

@@ -1,8 +1,8 @@
 {
-  "name": "rss",
-  "version": "0.0.1-beta",
-  "description": "",
-  "dependencies": {
-    "Fusion": "0.1.1-beta"
-  }
+	"name": "rss",
+	"version": "0.0.1-beta",
+	"description": "",
+	"dependencies": {
+		"Fusion": "0.1.1-beta"
+	}
 }
