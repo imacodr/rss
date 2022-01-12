@@ -1,4 +1,4 @@
-[![Frame 594|690x215](https://raw.githubusercontent.com/imacodr/rss/main/assets/banner.png)](https://imacodr.github.io/rss)
+[![Frame 594|690x215](https://raw.githubusercontent.com/imacodr/rss/main/assets/banner.png?token=GHSAT0AAAAAABQJLP6TJYW32ERVHU7RXYWMYPIS4YQ)](https://imacodr.github.io/rss)
 
 <div align="center">
 
@@ -76,6 +76,6 @@ If you have any questions on how rss works, please reply on this post! I'll be a
 
 If you have more concerns or need help with fetchu we have community servers!
 
-[![1024-gold 2|40x40](https://raw.githubusercontent.com/imacodr/rss/main/assets/discord.png)](https://discord.gg/SYtrv9m)
+[![1024-gold 2|40x40](https://raw.githubusercontent.com/imacodr/rss/main/assets/discord.png?token=GHSAT0AAAAAABQJLP6TLE3QPC3WZUGNUAEIYPIS5BA)](https://discord.gg/SYtrv9m)
 
 </div>

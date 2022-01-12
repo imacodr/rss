@@ -6,7 +6,7 @@ gitSourceBranch = "main"
 
 [docusaurus]
 tagline = "Advanced element styling made easier"
-favicon = "https://raw.githubusercontent.com/imacodr/rss/main/assets/logo.png"
+favicon = "https://raw.githubusercontent.com/imacodr/rss/main/assets/RSSLOGO.png?token=GHSAT0AAAAAABQJLP6TEBGRJWXTCR6B2JNSYPIS4MA"
 themeConfig = {navbar = {logo = {alt = "Rojo Logo",src = "img/logo.png",}}}
 
 
