@@ -4,7 +4,7 @@
 ]]
 
 local rss = {
-    style = require(script.style)
+    style = require(script.style),
 }
 
 return rss
