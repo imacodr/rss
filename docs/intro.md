@@ -55,7 +55,7 @@ roarn install rss
 
 If you are preferably using Roblox Studio to develop code you can also install our module through the Roblox marketplace.
 
-[Roblox Module](https://www.roblox.com/library/8145888425/rss)
+[Roblox Module](https://www.roblox.com/library/8523806833/rss-Roblox-Style-Sheets)
 
 ## with GitHub
 
