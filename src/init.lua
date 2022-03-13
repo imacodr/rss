@@ -5,7 +5,7 @@
 
 
 local stylesheets = require(script.StylesheetFiles.stylesheetDictionary).getStylesheets()
-print(stylesheets)
+
 local style = require(script.style)(stylesheets)
 
 local rss = {

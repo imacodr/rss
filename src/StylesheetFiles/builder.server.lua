@@ -19,9 +19,9 @@ end
 
 if RunService:IsRunning() then
     find(function (obj)
-        if (obj.Name:match(".stylesheet") and obj:IsA("ModuleScript")) then
+        if (obj.Name:match(".rss") and obj:IsA("ModuleScript")) then
             local stylesheet = require(obj)
-            stylesheetDictionary.addStyles(obj.Name:gsub(".stylesheet", ""), stylesheet)
+            stylesheetDictionary.addStyles(obj.Name:gsub(".rss", ""), stylesheet)
         end
     end)
 	stylesheetDictionary.setReady()

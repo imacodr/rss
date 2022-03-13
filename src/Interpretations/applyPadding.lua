@@ -11,7 +11,7 @@ local Types = require(script.Parent.Parent.Utility.typings)
 
 local logExpectedError = require(script.Parent.Parent.Loggers.logExpectedError)
 
-local Fusion = require(script.Parent.Parent.modules.Fusion)
+local Fusion = require(script.Parent.Parent.Packages.Fusion)
 local New = Fusion.New
 
 return function (stylesheet: Types.Stylesheet, element: GuiObject?)

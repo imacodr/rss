@@ -7,7 +7,7 @@
     @return Instance
 ]=]
 
-local Fusion = require(script.Parent.Parent.modules.Fusion)
+local Fusion = require(script.Parent.Parent.Packages.Fusion)
 
 local Types = require(script.Parent.Parent.Utility.typings)
 
