@@ -1,9 +1,9 @@
 [package]
 name = "imacodr/rss"
 description = "Advanced UI styling on Roblox made easier"
-version = "1.0.3"
+version = "1.0.5-alpha"
 realm = "shared"
 registry = "https://github.com/upliftgames/wally-index"
 
 [dependencies]
-Fusion = "elttob/fusion@0.1.1-beta"
+Fusion = "elttob/fusion@0.2.0"

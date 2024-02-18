@@ -1,12 +1,6 @@
 {
   "name": "rss-publish",
   "tree": {
-    "$className": "DataModel",
-    "ReplicatedStorage": {
-      "$className": "ReplicatedStorage",
-      "rss": {
-        "$path": "src"
-      }
-    }
+    "$path": "src"
   }
 }

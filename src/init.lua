@@ -16,6 +16,6 @@ local rss = {
 return rss
 
 --[=[
-    @class MainModule
+    @class RSS
     The main module for RSS
 ]=]
